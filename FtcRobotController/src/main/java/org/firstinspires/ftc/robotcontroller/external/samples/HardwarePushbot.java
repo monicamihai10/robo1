@@ -57,7 +57,7 @@ public class HardwarePushbot {
 
     public DcMotor  roatast     =null;          //ROTI
     public DcMotor  roatadr     =null;
-
+    public DcMotor motorCamera = null;
 
 
 
@@ -118,6 +118,7 @@ public class HardwarePushbot {
         wrist       =hwMap.get(Servo.class, "articulatie");
         deget       =hwMap.get(Servo.class, "deg");
 
+        motorCamera = hwMap.get(DcMotor.class, "neverrest1");
         //POZITII
 
         tavaServo.setPosition(0.25);
